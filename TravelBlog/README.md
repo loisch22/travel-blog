@@ -80,6 +80,7 @@ If missing, add:
 #### Commands in terminal or VS Package Console (Windows only)
 * Right click on solution file, `Build` project
 * `Start Server` in MAMP
+*  Open terminal, go to level with .csproj file
 * `dotnet restore` (keep running restore if you come across errors)
 * `dotnet ef migrations add Initial` (Initial can be any name of your migration, like a commit message)
 * `dotnet ef database update`
