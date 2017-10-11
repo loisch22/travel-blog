@@ -10,7 +10,6 @@ namespace TravelBlog.Controllers
 {
     public class PeopleController : Controller
     {
-        // GET: /<controller>/
         public IActionResult Index()
         {
             return View();

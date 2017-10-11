@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using TravelBlog.Models;
 
 namespace TravelBlog.Controllers
 {
     public class LocationController : Controller
     {
-        // GET: /<controller>/
+        private TravelBlogDbContext db = new TravelBlogDbContext();
+
         public IActionResult Index()
         {
-            return View();
+            return View(db.Locations.ToList());
         }
     }
 }
