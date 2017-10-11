@@ -18,10 +18,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Country\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Location\" />
+    <Folder Include="Views\Experience\" />
+    <Folder Include="Views\People\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\Country.cs" />
+    <Compile Remove="Views\Shared\_Layout.cs" />
+    <Compile Remove="Views\Location\Delete.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Country\Index.cshtml" />
   </ItemGroup>
 </Project>
